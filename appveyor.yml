@@ -13,8 +13,10 @@ before_build:
 build_script:
   - gradlew.bat build connectedCheck
 
-after_build:
-  - 'appveyor PushArtifact app\build\app-nonRoot-release.apk'
+artifats:
+  - path: app\build
+    name: build
+    type: zip
 
 deploy:
   release: myproduct-v$(APPVEYOR_BUILD_VERSION)
@@ -22,7 +24,7 @@ deploy:
   provider: GitHub
   auth_token:
     secure: R5LbMHDTqII8hvnYye7N7W2q3EXR6KtL88dMHJ7MPKXC1RFJdXsXoWWDwOR17psa
-  artifact: /.*\.apk/
+  artifact: build.zip
   draft: false
   prerelease: false
   on:
