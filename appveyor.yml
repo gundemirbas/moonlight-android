@@ -14,7 +14,7 @@ build_script:
   - gradlew.bat build connectedCheck
 
 artifacts:
-  - path: app\build\output\apk
+  - path: app\build\output
     name: build
     type: zip
 
@@ -29,4 +29,4 @@ deploy:
   prerelease: false
   on:
     branch: master                 
-    APPVEYOR_REPO_TAG: true
+    APPVEYOR_REPO_TAG: false
