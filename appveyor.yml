@@ -14,8 +14,8 @@ build_script:
   - gradlew.bat build connectedCheck
 
 artifacts:
-  - path: app\build\outputs\apk
-    name: build
+  - path: app\build\outputs\apk\nonRoot\Release
+    name: unsigned-apk
     type: zip
 
 deploy:
@@ -24,9 +24,9 @@ deploy:
   provider: GitHub
   auth_token:
     secure: R5LbMHDTqII8hvnYye7N7W2q3EXR6KtL88dMHJ7MPKXC1RFJdXsXoWWDwOR17psa
-  artifact: build.zip
+  artifact: app\build\outputs\apk\nonRoot\Release\unsigned-apk
   draft: false
   prerelease: false
   on:
     branch: master                 
-    APPVEYOR_REPO_TAG: false
+    APPVEYOR_REPO_TAG: true
