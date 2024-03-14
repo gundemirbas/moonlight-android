@@ -22,9 +22,9 @@ deploy:
   provider: GitHub
   auth_token:
     secure: R5LbMHDTqII8hvnYye7N7W2q3EXR6KtL88dMHJ7MPKXC1RFJdXsXoWWDwOR17psa
-  artifact: /.*\.nupkg/            # upload all NuGet packages to release assets
+  artifact: /.*\.apk/
   draft: false
   prerelease: false
   on:
     branch: master                 
-    APPVEYOR_REPO_TAG: true       
+    APPVEYOR_REPO_TAG: false
