@@ -108,6 +108,7 @@ public class MediaCodecHelper {
         // 2) They crash with our HEVC stream anyway (at least prior to CSD batching)
         blacklistedDecoderPrefixes.add("OMX.qcom.video.decoder.hevcswvdec");
         blacklistedDecoderPrefixes.add("OMX.SEC.hevc.sw.dec");
+        blacklistedDecoderPrefixes.add("c2");
     }
     
     static {
