@@ -82,8 +82,8 @@ public class MediaCodecHelper {
 
     static {
         preferredDecoders = new LinkedList<>();
-        preferredDecoders.add("omx.qcom.video.decoder.hevc.low_latency");
-        preferredDecoders.add("omx.qcom.video.decoder.avc.low_latency");
+//        preferredDecoders.add("omx.qcom.video.decoder.hevc.low_latency");
+//        preferredDecoders.add("omx.qcom.video.decoder.avc.low_latency");
     }
     
     static {
