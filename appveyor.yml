@@ -14,7 +14,7 @@ build_script:
   - gradlew.bat build connectedCheck
 
 artifacts:
-  - path: app\build
+  - path: app\build\outputs\apk
     name: build
     type: zip
 
