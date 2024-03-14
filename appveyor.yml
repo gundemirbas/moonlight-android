@@ -13,7 +13,7 @@ before_build:
 build_script:
   - gradlew.bat build connectedCheck
 
-artifats:
+artifacts:
   - path: app\build
     name: build
     type: zip
