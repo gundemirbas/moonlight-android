@@ -27,6 +27,7 @@ deploy:
   artifact: app\build\outputs\apk\nonRoot\Release\unsigned-apk.zip
   draft: false
   prerelease: false
+  skip_tags: true
   on:
     branch: master                 
-    APPVEYOR_REPO_TAG: true
+    APPVEYOR_REPO_TAG: false
