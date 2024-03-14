@@ -1,3 +1,4 @@
+skip_tags: true
 version: 0.0.0.{build}
 
 clone_depth: 1
@@ -27,7 +28,6 @@ deploy:
   artifact: app\build\outputs\apk\nonRoot\Release\unsigned-apk.zip
   draft: false
   prerelease: false
-  skip_tags: true
   on:
     branch: master                 
     APPVEYOR_REPO_TAG: false
