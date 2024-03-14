@@ -24,7 +24,7 @@ deploy:
   provider: GitHub
   auth_token:
     secure: R5LbMHDTqII8hvnYye7N7W2q3EXR6KtL88dMHJ7MPKXC1RFJdXsXoWWDwOR17psa
-  artifact: app\build\outputs\apk\nonRoot\Release\unsigned-apk
+  artifact: app\build\outputs\apk\nonRoot\Release\unsigned-apk.zip
   draft: false
   prerelease: false
   on:
