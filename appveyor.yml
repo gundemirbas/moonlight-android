@@ -14,7 +14,7 @@ build_script:
   - gradlew.bat build connectedCheck
 
 after_build:
-  - 'appveyor PushArtifact app\build\*'
+  - 'appveyor PushArtifact app\build\app-nonRoot-release.apk'
 
 deploy:
   release: myproduct-v$(APPVEYOR_BUILD_VERSION)
